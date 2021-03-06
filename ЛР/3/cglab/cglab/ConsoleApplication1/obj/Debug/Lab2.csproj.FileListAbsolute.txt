@@ -1,0 +1,11 @@
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.dll
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\obj\Debug\Lab2.csprojResolveAssemblyReference.cache
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Alexey Skuridin\CG\2\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

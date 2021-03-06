@@ -1,0 +1,33 @@
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\obj\Debug\CGLabPlatform.csprojResolveAssemblyReference.cache
+C:\Users\stud\Desktop\cg\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csprojResolveAssemblyReference.cache
+C:\Users\stud\Desktop\cg\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\cg\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\cg\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+C:\Users\stud\Desktop\cg\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D_shawdows\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D_shawdows\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3D_shawdows\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3D_shawdows\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3D_shawdows\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3D_shawdows\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3D_shawdows\CGLabPlatform\obj\Debug\CGLabPlatform.pdb

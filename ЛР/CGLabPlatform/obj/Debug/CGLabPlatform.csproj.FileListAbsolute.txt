@@ -1,0 +1,12 @@
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КГ\ComputerGraphicsLabs-master\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КГ\ComputerGraphicsLabs-master\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КГ\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КГ\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КГ\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КГ\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\ComputerGraphicsLabs-master\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\ComputerGraphicsLabs-master\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\ComputerGraphicsLabs-master\CGLabPlatform\obj\Debug\CGLabPlatform.pdb

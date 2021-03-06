@@ -1,0 +1,5 @@
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\bin\Release\CGLabPlatform.dll
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\bin\Release\CGLabPlatform.pdb
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\obj\Release\CGLabPlatform.dll
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\obj\Release\CGLabPlatform.pdb
+C:\Projects\mai-computer-graphics\trunk\C#\CGLabPlatform\obj\Release\CGLabPlatform.csprojResolveAssemblyReference.cache

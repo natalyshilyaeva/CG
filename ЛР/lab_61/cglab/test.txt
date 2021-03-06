@@ -1,0 +1,20 @@
+for (int j = 1; j < Height; j += Aprox, TopCircles++)
+        {
+            CntVertInTopCircles = 0;
+            for (int phi = 0; phi <= 360; phi += Aprox, CntVertInTopCircles++)
+            {
+                if ((360 - phi) < Aprox)
+                {
+                    X = (Height - j);
+                    Y = 0;
+                }
+                else
+                {
+                    X = (Height - j) * Math.Cos(phi * Math.PI / 180);
+                    Y = (-1) * (Height - j) * Math.Sin(phi * Math.PI / 180);
+                }
+                Z = (Height / 2);
+                vertices[iterator] = new Vertex((float)X, (float)Y, (float)Z, 1, 1, 1, 0.0f, 1.0f, 0.0f);
+                iterator++;
+            }
+        }

@@ -1,0 +1,8 @@
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\bin\Debug\cglab-demo.exe.config
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\bin\Debug\cglab-demo.exe
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\bin\Debug\cglab-demo.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\bin\Debug\CGLabPlatform.dll
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\bin\Debug\CGLabPlatform.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\obj\Debug\cglab-empty.csprojResolveAssemblyReference.cache
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\obj\Debug\cglab-demo.exe
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-empty\obj\Debug\cglab-demo.pdb

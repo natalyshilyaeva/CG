@@ -1,0 +1,26 @@
+C:\Users\stud\Desktop\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+C:\Users\stud\Desktop\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+E:\Alexey Skuridin\CG\2\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csprojResolveAssemblyReference.cache
+E:\Alexey Skuridin\CG\2\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+E:\Alexey Skuridin\CG\2\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+D:\Alexey Skuridin\CG\3\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csprojResolveAssemblyReference.cache
+D:\Alexey Skuridin\CG\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+D:\Alexey Skuridin\CG\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\CGLabPlatform\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\CGLabPlatform\obj\Debug\CGLabPlatform.pdb

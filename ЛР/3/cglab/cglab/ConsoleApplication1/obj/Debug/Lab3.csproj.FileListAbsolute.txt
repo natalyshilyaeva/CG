@@ -1,0 +1,38 @@
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.dll
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Alexey Skuridin\CG\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csproj.CopyComplete
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csproj.CopyComplete
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\obj\Debug\Lab3.csproj.CopyComplete
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\3\cglab\cglab\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

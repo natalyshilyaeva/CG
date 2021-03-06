@@ -1,0 +1,667 @@
+using System;
+using SharpGL;
+using CGLabPlatform;
+using System.Runtime.InteropServices;
+
+
+// Создание и работа с классом приложения аналогична предыдущим примерам, только в 
+// в данном случае наследуемся от шаблона OGLApplicationTemplate<T>, в силу чего
+// для вывода графики будет использоваться элемент управления OGLDevice работающий
+// через OpenGL (далее OGL). Код OGLDevice размещается в Controls\OGLDevice.cs
+public abstract class CGLabDemoOGL : OGLApplicationTemplate<CGLabDemoOGL>
+{
+    [STAThread]
+    static void Main() { RunApplication(); }
+
+    #region Свойства
+
+    [DisplayCheckerProperty(false, "Использовать буфер вершин")]
+    public virtual bool useVBO { get; set; }
+
+    public double Height = 100; // высота цилиндра
+
+    [DisplayNumericProperty(30, 1, "Апроксимация", 6, 90)]
+    public abstract int Aprox { get; set; }
+
+    [DisplayNumericProperty(new[] { 0d, 0d, 0d }, 1, 0, "Положение камеры (X/Y/Z)")]
+    public virtual DVector3 cameraAngle
+    {
+        get { return Get<DVector3>(); }
+        set { if (Set(value)) UpdateModelViewMatrix(); }
+    }
+
+    [DisplayNumericProperty(300d, 0.1, 2, "Удаленность камеры")]
+    public virtual double cameraDistance
+    {
+        get { return Get<double>(); }
+        set { if (Set(value)) UpdateModelViewMatrix(); }
+    }
+
+    [DisplayNumericProperty(new[] { 1d, 37d, 19d }, 1, "LightPosition")]
+    public DVector3 LightPosition { get; set; }
+
+    #endregion
+
+    // Само создание объекта типа OpenGL осуществляется при создании устройства вывода (класс OGLDevice)
+    // и доступ к нему можно получить при помощи свойства gl данного объекта (RenderDevice) или объекта
+    // типа OGLDeviceUpdateArgs передаваемого в качестве параметра методу OnDeviceUpdate(). Данный метод,
+    // как и сама работа с устройством OpenGL реализуются в параллельном потоке. Обращение к устройству
+    // OpenGL из другого потока не допускается (создание многопоточного рендера возможно, но это достаточно
+    // специфическая архитектура, например рендинг частей экрана в текустуры а потом их объединение).
+    // Для большинства функций библиотеки OpenGL при отладке DEBUG конфигурации осуществляется проверка
+    // ошибок выполнения и их вывод в окно вывода Microsoft Visual Studio. Поэтому при отладке и написании 
+    // кода связанного с OpenGL необходимо также контролировать ошибки библиотеки OpenGL в окне вывода. 
+
+    protected override void OnMainWindowLoad(object sender, EventArgs args)
+    {
+        base.VSPanelWidth = 260;
+        base.ValueStorage.RightColWidth = 60;
+        base.RenderDevice.VSync = 1;
+
+        #region Обработчики событий мыши и клавиатуры -------------------------------------------------------
+        RenderDevice.MouseMoveWithLeftBtnDown += (s, e) => cameraAngle += new DVector3(-e.MovDeltaY, -e.MovDeltaX, 0);
+        RenderDevice.MouseWheel += (s, e) => cameraDistance += e.Delta / 1000.0;
+        #endregion
+
+
+        // Как было отмеченно выше вся работа связанная с OGL должна выполнятся в одном потоке. Тут работа с OGL
+        // осуществляется в отдельном потоке, а метод OnMainWindowLoad() является событием возбуждаемым потоком
+        // пользовательского интерфейса (UI). Поэтой причине весь код ниже добавляется в диспетчер устройства
+        // вывода (метод AddScheduleTask() объекта RenderDevice) и выполняется ассинхронно в контексте потока
+        // OGL. Сам диспетчер является очередью типа FIFO (First In First Out - т.е. задания обрабатываются 
+        // строго в порядке их поступления) и гарантирует, что все задания добавленные в OnMainWindowLoad()
+        // будут выполнены до первого вызова метода OnDeviceUpdate() (aka OnPaint)
+
+        #region  Инициализация OGL и параметров рендера -----------------------------------------------------
+        RenderDevice.AddScheduleTask((gl, s) =>
+        {
+            //gl.Disable(OpenGL.GL_DEPTH_TEST);
+            gl.Enable(OpenGL.GL_DEPTH_TEST);
+            gl.ClearColor(0, 0, 0, 0);
+            gl.FrontFace(OpenGL.GL_CCW); // обход вершин против часовой стрелки
+            gl.PolygonMode(OpenGL.GL_FRONT, OpenGL.GL_FILL); // закрашиваются полигоны, повёрнутые лицевой стороной
+        });
+        #endregion
+
+        #region Инициализация буфера вершин -----------------------------------------------------------------
+        RenderDevice.AddScheduleTask((gl, s) =>
+        {
+            gl.EnableClientState(OpenGL.GL_VERTEX_ARRAY);
+            gl.EnableClientState(OpenGL.GL_NORMAL_ARRAY);
+            gl.EnableClientState(OpenGL.GL_INDEX_ARRAY);
+            gl.EnableClientState(OpenGL.GL_COLOR_ARRAY); 
+        }, this);
+        #endregion
+
+        #region Уничтожение буфера вершин по завершению работы OGL ------------------------------------------
+        RenderDevice.Closed += (s, e) => // Событие выполняется в контексте потока OGL при завершении работы
+        {
+            var gl = e.gl;
+            gl.DisableClientState(OpenGL.GL_VERTEX_ARRAY);
+            gl.DisableClientState(OpenGL.GL_NORMAL_ARRAY);
+            gl.DisableClientState(OpenGL.GL_INDEX_ARRAY);
+            gl.DisableClientState(OpenGL.GL_COLOR_ARRAY);
+        };
+        #endregion
+
+        #region Обновление матрицы проекции при изменении размеров окна и запуске приложения ----------------
+        RenderDevice.Resized += (s, e) =>
+        {
+            var gl = e.gl;
+            gl.MatrixMode(OpenGL.GL_PROJECTION);
+            var pMatrix = Perspective(60, (double)e.Width / e.Height, 0.1, 100);
+            gl.LoadMatrix(pMatrix.ToArray(true));
+        };
+        #endregion
+    }
+
+    private void UpdateModelViewMatrix() // метод вызывается при измении свойств cameraAngle и cameraDistance
+    {
+        #region Обновление объектно-видовой матрицы ---------------------------------------------------------
+        RenderDevice.AddScheduleTask((gl, s) =>
+        {
+            gl.MatrixMode(OpenGL.GL_MODELVIEW);
+            var deg2rad = Math.PI / 180; // Вращается камера, а не сам объект
+            double phi = deg2rad * cameraAngle.X;
+            double teta = deg2rad * cameraAngle.Y;
+            double psi = deg2rad * cameraAngle.Z;
+            // матрицы поворота вокруг осей
+            DMatrix3 RX = new DMatrix3(1, 0, 0,
+                                       0, Math.Cos(phi), -Math.Sin(phi),
+                                       0, Math.Sin(phi), Math.Cos(phi));
+
+            DMatrix3 RY = new DMatrix3(Math.Cos(teta), 0, Math.Sin(teta),
+                                       0, 1, 0,
+                                       -Math.Sin(teta), 0, Math.Cos(teta));
+
+            DMatrix3 RZ = new DMatrix3(Math.Cos(psi), -Math.Sin(psi), 0,
+                                       Math.Sin(psi), Math.Cos(psi), 0,
+                                       0, 0, 1);
+            var cameraTransform = (RX * RY) * RZ;
+            var cameraPosition = cameraTransform * new DVector3(0, 0, cameraDistance);
+            var cameraUpDirection = cameraTransform * new DVector3(0, 1, 0);
+            // Мировая матрица (преобразование локальной системы координат в мировую)
+            var mMatrix = DMatrix4.Identity; // нет никаких преобразований над объекта
+            // Видовая матрица (переход из мировой системы координат к системе координат камеры)
+            var vMatrix = LookAt(DMatrix4.Identity, cameraPosition, DVector3.Zero, cameraUpDirection);
+            // матрица ModelView
+            var mvMatrix = vMatrix * mMatrix;
+            gl.LoadMatrix(mvMatrix.ToArray(true));
+        });
+        #endregion
+    }
+
+    private static DMatrix4 Perspective(double verticalAngle, double aspectRatio, double nearPlane, double farPlane)
+    {
+        var radians = (verticalAngle / 2) * Math.PI / 180;
+        var sine = Math.Sin(radians);
+        if (nearPlane == farPlane || aspectRatio == 0 || sine == 0)
+            return DMatrix4.Zero;
+        var cotan = Math.Cos(radians) / sine;
+        var clip = farPlane - nearPlane;
+        return new DMatrix4(
+        cotan / aspectRatio, 0, 0, 0,
+        0, cotan, 0, 0,
+        0, 0, -(nearPlane + farPlane) / clip, -(2.0 * nearPlane * farPlane) / clip,
+        0, 0, -1.0, 1.0
+        );
+    }
+
+    private static DMatrix4 LookAt(DMatrix4 matrix, DVector3 eye, DVector3 center, DVector3 up)
+    {
+        var forward = (center - eye).Normalized();
+        if (forward.ApproxEqual(DVector3.Zero, 0.00001))
+            return matrix;
+        var side = (forward * up).Normalized();
+        var upVector = side * forward;
+        var result = matrix * new DMatrix4(
+        +side.X, +side.Y, +side.Z, 0,
+        +upVector.X, +upVector.Y, +upVector.Z, 0,
+        -forward.X, -forward.Y, -forward.Z, 0,
+        0, 0, 0, 1
+        );
+        result.M14 -= result.M11 * eye.X + result.M12 * eye.Y + result.M13 * eye.Z;
+        result.M24 -= result.M21 * eye.X + result.M22 * eye.Y + result.M23 * eye.Z;
+        result.M34 -= result.M31 * eye.X + result.M32 * eye.Y + result.M33 * eye.Z;
+        result.M44 -= result.M41 * eye.X + result.M42 * eye.Y + result.M43 * eye.Z;
+        return result;
+    }
+
+
+    [StructLayout(LayoutKind.Sequential, Pack = 1)]
+    public struct Vertex
+    {
+        // Координата
+        public readonly float vx, vy, vz;
+        // Нормаль
+        public readonly float nx, ny, nz;
+        // Цвет
+        public readonly float r, g, b;
+        public Vertex(float vx, float vy, float vz, float nx, float ny, float nz, float r, float g, float b)
+        {
+            this.vx = vx; this.vy = vy; this.vz = vz;
+            this.nx = nx; this.ny = ny; this.nz = nz;
+            this.r = r; this.g = g; this.b = b;
+        }
+    }
+
+    public Vertex[] vertices; // массив вершин
+
+    public int SIZE = 0; // размер массива вершин
+    public void Count_Vertex() // получение размера массива (расчёт кол-ва вершин) и его создание
+    {
+        SIZE = 0;
+        //////////////////////// вершины верхней крышки
+        for (double j = 1; j < Height; j += (double)Aprox, TopCircles++)
+        {
+            CntVertInTopCircles = 0;
+            for (double phi = 0; phi <= 360; phi += (double)Aprox, CntVertInTopCircles++)
+            {
+                SIZE++;
+            }
+        }
+        ///////////////////////////////////////////////////////
+        for (double j = 1; j < Height; j += (double)Aprox, BottomCircles++)
+        {
+            CntVertInBottomCircles = 0;
+            for (double phi = 0; phi <= 360; phi += (double)Aprox, CntVertInBottomCircles++)
+            {
+                SIZE++;
+            }
+        }
+        //////////////////////////////////////////////////боковая поверхность
+        for (int i = CntVertInTopCircles * TopCircles; i < CntVertInTopCircles * TopCircles + CntVertInBottomCircles; i++)
+        {
+            SIZE++;
+        }
+        Circles++;
+        for (double j = Aprox; j <= Height; j += (double)(Aprox), Circles++)
+        {
+            CntVertInCircle = 0;
+            for (double phi = 0; phi <= 360; phi += (double)Aprox, CntVertInCircle++)
+            {
+                SIZE++;
+            }
+        }
+        for (int i = 0; i < CntVertInTopCircles; i++)
+        {
+            SIZE++;
+        }
+        Circles++;
+        SIZE += 2;
+        vertices = new Vertex[SIZE];
+    }
+
+    public int CntVertInCircle = 0;
+    public int Circles = 0;
+    public int CntVertInTopCircles = 0;
+    public int TopCircles = 0;
+    public int CntVertInBottomCircles = 0;
+    public int BottomCircles = 0;
+    public void Create_Vertex()
+    {
+        CntVertInCircle = 0;
+        Circles = 0;
+        CntVertInTopCircles = 0;
+        TopCircles = 0;
+        CntVertInBottomCircles = 0;
+        BottomCircles = 0;
+        double X, Y, Z;
+        int iterator = 0;
+        //////////////////////// вершины верхней крышки
+
+        for (double j = 1; j < Height; j += (double)Aprox, TopCircles++)
+        {
+            CntVertInTopCircles = 0;
+            for (double phi = 0; phi <= 360; phi += (double)Aprox, CntVertInTopCircles++)
+            {
+                if ((360 - phi) < Aprox)
+                {
+                    X = (Height - j);
+                    Y = 0;
+                }
+                else
+                {
+                    X = (Height - j) * Math.Cos(phi * Math.PI / 180);
+                    Y = (-1) * (Height - j) * Math.Sin(phi * Math.PI / 180);
+                }
+                Z = (Height / 2);
+                vertices[iterator] = new Vertex((float)X, (float)Y, (float)Z, 1, 1, 1, 0.0f, 1.0f, 0.0f);
+                iterator++;
+            }
+        }
+        ///////////////////////////////////////////////////////
+        for (double j = 1; j < Height; j += (double)Aprox, BottomCircles++)
+        {
+            CntVertInBottomCircles = 0;
+            for (double phi = 0; phi <= 360; phi += (double)Aprox, CntVertInBottomCircles++)
+            {
+                if ((360 - phi) < Aprox)
+                {
+                    X = (Height - j);
+                    Y = 0;
+                    Z = ((-Height / 2 + j / 2) * Math.Cos(0) - 0);
+                }
+                else
+                {
+                    X = (Height - j) * Math.Cos(phi * Math.PI / 180);
+                    Y = (-1) * (Height - j) * Math.Sin(phi * Math.PI / 180);
+                    Z = ((-Height / 2.0 + j / 2.0) * Math.Cos(phi * Math.PI / 180) - 0);
+                }
+                vertices[iterator] = new Vertex((float)X, (float)Y, (float)Z, 1, 1, 1, 0.0f, 0.0f, 1.0f);
+                iterator++;
+            }
+        }
+        //////////////////////////////////////////////////боковая поверхность
+        for (int i = CntVertInTopCircles * TopCircles; i < CntVertInTopCircles * TopCircles + CntVertInBottomCircles; i++)
+        {
+            vertices[iterator] = new Vertex(vertices[i].vx, vertices[i].vy, vertices[i].vz, vertices[i].nx, vertices[i].ny, vertices[i].nz, 1f, 0, 0);
+            iterator++;
+        }
+        Circles++;
+        for (double j = Aprox; j <= Height; j += (double)(Aprox), Circles++)
+        {
+            CntVertInCircle = 0;
+            for (double phi = 0; phi <= 360; phi += (double)Aprox, CntVertInCircle++)
+            {
+                if ((360 - phi) < Aprox)
+                {
+                    X = Height;
+                    Y = 0;
+                    Z = (((-Height / 2 + j / 2) * Math.Cos(0) + j / 2) / 1);
+                    //Z = (Height / 2d);
+                }
+                else
+                {
+                    X = Height * Math.Cos(phi * Math.PI / 180);
+                    Y = (-1) * Height * Math.Sin(phi * Math.PI / 180);
+                    Z = (((-Height / 2 + j / 2) * Math.Cos(phi * Math.PI / 180) + j / 2) / 1);
+                    //Z = (Height / 2d);
+                }
+                vertices[iterator] = new Vertex((float)X, (float)Y, (float)Z, 1, 1, 1, 1.0f, 0.0f, 0.0f);
+                iterator++;
+            }
+        }
+        //for (double phi = 0; phi <= 360; phi += (double)Aprox)
+        //{
+        //    if ((360 - phi) < Aprox)
+        //    {
+        //        double a = Height * (1 - Math.Cos(0 * Math.PI / 180));
+        //        double b = Height * (1 - Math.Sin(0 * Math.PI / 180));
+        //        X = Height;
+        //        Y = 0;
+        //        Z = (Height / 2);
+        //    }
+        //    else
+        //    {
+        //        X = Height * Math.Cos(phi * Math.PI / 180);
+        //        Y = (-1) * Height * Math.Sin(phi * Math.PI / 180);
+        //        Z = (Height / 2);
+        //    }
+        //    vertices[iterator] = new Vertex((float)X, (float)Y, (float)Z, 1, 1, 1, 1.0f, 0.0f, 0.0f);
+        //    iterator++;
+        //}
+        for (int i = 0; i < CntVertInTopCircles; i++)
+        {
+            vertices[iterator] = new Vertex(vertices[i].vx, vertices[i].vy, vertices[i].vz, vertices[i].nx, vertices[i].ny, vertices[i].nz, 1f, 0, 0);
+            iterator++;
+        }
+        Circles++;
+        ////////////////////////////////////////////////////центры верхней и нижней крышки
+        vertices[iterator] = new Vertex((float)0, (float)0, (float)(Height / 2), 1, 1, 1, 0.0f, 1.0f, 0.0f);
+        iterator++;
+        vertices[iterator] = new Vertex((float)0, (float)0, (float)0, 1, 1, 1, 0.0f, 0.0f, 1.0f);
+        iterator++;
+    }
+
+    public int Polygons = 0; // число полигонов
+    public void Count_Polygons()
+    {
+        Polygons = 0;
+        for (int j = 1; j < Circles; j++)
+        {
+            for (int i = 0; i < CntVertInCircle - 1; i++)
+            {
+                Polygons += 3;
+            }
+        }
+        for (int j = 1; j < Circles - 0; j++)
+        {
+            for (int i = j * CntVertInCircle; i < (j + 1) * CntVertInCircle - 1; i++)
+            {
+                Polygons += 3;
+            }
+        }
+        //разбивка на полигоны верхней крышки
+        for (int j = 1; j < TopCircles; j++)
+        {
+            for (int i = 0; i < CntVertInTopCircles - 1; i++)
+            {
+                Polygons += 3;
+            }
+        }
+        for (int j = 1; j < TopCircles - 0; j++)
+        {
+            for (int i = j * CntVertInTopCircles; i < (j + 1) * CntVertInTopCircles - 1; i++)
+            {
+                Polygons += 3;
+            }
+        }
+        for (int i = 0; i < CntVertInTopCircles - 1; i++)
+        {
+            Polygons += 3;
+        }
+        //разбивка на полигоны нижней крышки
+        for (int j = 1; j < BottomCircles; j++)
+        {
+            for (int i = 0; i < CntVertInBottomCircles - 1; i++)
+            {
+                Polygons += 3;
+            }
+        }
+        for (int j = 1; j < BottomCircles; j++)
+        {
+            for (int i = j * CntVertInBottomCircles; i < (j + 1) * CntVertInBottomCircles - 1; i++)
+            {
+                Polygons += 3;
+            }
+        }
+        for (int i = 0; i < CntVertInBottomCircles - 1; i++)
+        {
+            Polygons += 3;
+        }
+        indices = new int[Polygons];
+    }
+
+    public int[] indices; // массив индексов вершин
+    public void Create_Polygons()
+    {
+        int iterator = 0;
+        int visited = 0;
+        //разбивка на полигоны верхней крышки
+        for (int j = 1; j < TopCircles; j++)
+        {
+            for (int i = 0; i < CntVertInTopCircles - 1; i++)
+            {
+                int a = (j - 1) * CntVertInTopCircles + i + visited;
+                int b = (j - 1) * CntVertInTopCircles + i + 1 + visited;
+                int c = j * CntVertInTopCircles + i + visited;
+                indices[iterator] = a; iterator++;
+                indices[iterator] = b; iterator++;
+                indices[iterator] = c; iterator++;
+                Count_Normal(a, b, c);
+            }
+        }
+        int z = 1;
+        for (int j = 1; j < TopCircles - 0; j++)
+        {
+            for (int i = j * CntVertInTopCircles; i < (j + 1) * CntVertInTopCircles - 1; i++)
+            {
+                int a = i + visited;
+                int b = z + visited;
+                int c = i + 1 + visited;
+                indices[iterator] = a; iterator++;
+                indices[iterator] = b; iterator++;
+                indices[iterator] = c; iterator++;
+                z++;
+                Count_Normal(a, b, c);
+            }
+            z++;
+        }
+        for (int i = 0; i < CntVertInTopCircles - 1; i++)
+        {
+            int a = (TopCircles - 1) * CntVertInTopCircles + i + visited;
+            int b = (TopCircles - 1) * CntVertInTopCircles + i + 1 + visited;
+            int c = vertices.Length - 2;
+            indices[iterator] = a; iterator++;
+            indices[iterator] = b; iterator++;
+            indices[iterator] = c; iterator++;
+            Count_Normal(a, b, c);
+        }
+        // разбивка на полигоны нижней крышки
+        visited += TopCircles * CntVertInTopCircles;
+        for (int j = 1; j < BottomCircles; j++)
+        {
+            for (int i = 0; i < CntVertInBottomCircles - 1; i++)
+            {
+                int a = (j - 1) * CntVertInBottomCircles + i + visited;
+                int b = j * CntVertInBottomCircles + i + visited;
+                int c = (j - 1) * CntVertInBottomCircles + i + 1 + visited;
+                indices[iterator] = a; iterator++;
+                indices[iterator] = b; iterator++;
+                indices[iterator] = c; iterator++;
+                Count_Normal(a, b, c);
+            }
+        }
+        z = 1;
+        for (int j = 1; j < BottomCircles; j++)
+        {
+            for (int i = j * CntVertInBottomCircles; i < (j + 1) * CntVertInBottomCircles - 1; i++)
+            {
+                int a = i + visited;
+                int b = i + 1 + visited;
+                int c = z + visited;
+                indices[iterator] = a; iterator++;
+                indices[iterator] = b; iterator++;
+                indices[iterator] = c; iterator++;
+                z++;
+                Count_Normal(a, b, c);
+            }
+            z++;
+        }
+        for (int i = 0; i < CntVertInBottomCircles - 1; i++)
+        {
+            int a = (BottomCircles - 1) * CntVertInBottomCircles + i + visited;
+            int b = vertices.Length - 1;
+            int c = (BottomCircles - 1) * CntVertInBottomCircles + i + 1 + visited;
+            indices[iterator] = a; iterator++;
+            indices[iterator] = b; iterator++;
+            indices[iterator] = c; iterator++;
+            Count_Normal(a, b, c);
+        }
+        visited += BottomCircles * CntVertInBottomCircles;
+        //разбивка на полигоны бокового основания
+        for (int j = 1; j < Circles; j++)
+        {
+            for (int i = 0; i < CntVertInCircle - 1; i++)
+            {
+                int a = (j - 1) * CntVertInCircle + i + visited;
+                int b = (j - 1) * CntVertInCircle + i + 1 + visited;
+                int c = j * CntVertInCircle + i + visited;
+                indices[iterator] = a; iterator++;
+                indices[iterator] = b; iterator++;
+                indices[iterator] = c; iterator++;
+                Count_Normal(a, b, c);
+            }
+        }
+        int k = 1;
+        for (int j = 1; j < Circles - 0; j++)
+        {
+            for (int i = j * CntVertInCircle; i < (j + 1) * CntVertInCircle - 1; i++)
+            {
+                int a = i + visited;
+                int b = k + visited;
+                int c = 1 + i + visited;
+                indices[iterator] = a; iterator++;
+                indices[iterator] = b; iterator++;
+                indices[iterator] = c; iterator++;
+                k++;
+                Count_Normal(a, b, c);
+            }
+            k++;
+        }
+    }
+
+    public void Count_Normal(int a, int b, int c)
+    {
+        DVector3 vec1 = new DVector3(vertices[a].vx, vertices[a].vy, vertices[a].vz);
+        DVector3 vec2 = new DVector3(vertices[b].vx, vertices[b].vy, vertices[b].vz);
+        DVector3 vec3 = new DVector3(vertices[c].vx, vertices[c].vy, vertices[c].vz);
+        DVector3 normal = (1) * DVector3.CrossProduct(vec1 - vec3, vec2 - vec1);
+        vertices[a] = new Vertex(vertices[a].vx, vertices[a].vy, vertices[a].vz, (float)normal.X, (float)normal.Y, (float)normal.Z, vertices[a].r, vertices[a].g, vertices[a].b);
+        normal = (1) * DVector3.CrossProduct(vec2 - vec1, vec3 - vec2);
+        vertices[b] = new Vertex(vertices[b].vx, vertices[b].vy, vertices[b].vz, (float)normal.X, (float)normal.Y, (float)normal.Z, vertices[b].r, vertices[b].g, vertices[b].b);
+        normal = (-1) * DVector3.CrossProduct(vec2 - vec3, vec1 - vec3);
+        vertices[c] = new Vertex(vertices[c].vx, vertices[c].vy, vertices[c].vz, (float)normal.X, (float)normal.Y, (float)normal.Z, vertices[c].r, vertices[c].g, vertices[c].b);
+    }
+
+    public int[] grid;
+
+
+
+    //public Vertex[] vertices = {
+    //    // vx vy vz nx ny nz r g b
+    //    new Vertex( .5f, .5f, .5f, nf, nf, nf, 1f, 1f, 1f),
+    //    new Vertex(-.5f, .5f, .5f, -nf, nf, nf, 1f, 1f, 0f),
+    //    new Vertex(-.5f, -.5f, .5f, -nf, -nf, nf, 1f, 0f, 0f),
+    //    new Vertex( .5f, -.5f, .5f, nf, -nf, nf, 1f, 0f, 1f),
+    //    new Vertex( .5f, -.5f, -.5f, nf, -nf, -nf, 0f, 0f, 1f),
+    //    new Vertex( .5f, .5f, -.5f, nf, nf, -nf, 0f, 1f, 1f),
+    //    new Vertex(-.5f, .5f, -.5f, -nf, nf, -nf, 0f, 1f, 0f),
+    //    new Vertex(-.5f, -.5f, -.5f, -nf, -nf, -nf, 0f, 0f, 0f) };
+
+    //public static float nf = (float)(1 / Math.Sqrt(3));
+    //public uint[] indices = {
+    //    // Первая последовательность
+    //    5, 6, 0, 1, // {v0,v5,v6,v1} - верхня грань
+    //    /* 0, 1 */ 3, 2, // {v0,v1,v2,v3} - передняя грань
+    //    /* 3, 2 */ 4, 7, // {v7,v4,v3,v2} - нижняя грань
+    //    // Вторая последовательность
+    //    2, 1, 7, 6, // {v1,v6,v7,v2} - левая грань
+    //    /* 7, 6 */ 4, 5, // {v4,v7,v6,v5} - задняя грань
+    //    /* 4, 5 */ 3, 0 // {v0,v3,v4,v5} - правая грань
+    //};
+
+    protected unsafe override void OnDeviceUpdate(object s, OGLDeviceUpdateArgs e)
+    {
+        var gl = e.gl;
+
+        // Очищаем буфер экрана и буфер глубины (иначе рисоваться все будет поверх старого)
+        gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT | OpenGL.GL_STENCIL_BUFFER_BIT);
+        Count_Vertex();
+        Create_Vertex();
+        Count_Polygons();
+        Create_Polygons();
+
+        if(true)
+        {
+            gl.Enable(OpenGL.GL_LIGHTING); // здесь включается расчет освещения 
+            gl.LightModel(OpenGL.GL_LIGHT_MODEL_TWO_SIDE, OpenGL.GL_TRUE); // делаем так, чтобы освещались обе стороны полигона
+            gl.Enable(OpenGL.GL_NORMALIZE); //делам нормали одинаковой величины во избежание артефактов
+            gl.Enable(OpenGL.GL_COLOR_MATERIAL); // Цвет материала
+
+            gl.Enable(OpenGL.GL_LIGHT0); // разрешаем использовать light0 
+            float[] light_ambient = { 0.0f, 0.0f, 0.3f, 1.0f };
+            float[] light_diffuse = { 0.7f, 0.7f, 0.7f, 1.0f };
+            float[] light_specular = { 1f, 1f, 1f, 1.0f };
+            float[] light_position = { (float)LightPosition.X, (float)LightPosition.Y, (float)LightPosition.Z, 0.0f };
+            gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_AMBIENT, light_ambient);
+            gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, light_diffuse);
+            gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_SPECULAR, light_specular);
+            gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_POSITION, light_position);
+        }
+        //gl.Rotate(1, 1, 0, 0);
+
+        // Рендинг сцены реализуется одним из двух методов - VB (Vertex Buffer) или VA (Vertex Array), 
+        // в зависимости от выбранного пользователем режима.
+        if (!useVBO)
+        #region Рендинг сцены методом VA (Vertex Array) -----------------------------------------------------
+        {
+
+            fixed (Vertex *vrt = vertices)
+            {
+                gl.VertexPointer(3, OpenGL.GL_FLOAT, sizeof(Vertex), (IntPtr)(&vrt[0].vx));
+                gl.NormalPointer(OpenGL.GL_FLOAT, sizeof(Vertex), (IntPtr)(&vrt[0].nx));
+                gl.ColorPointer(3, OpenGL.GL_FLOAT, sizeof(Vertex), (IntPtr)(&vrt[0].r));
+            }
+
+            fixed (int* ptr = indices)
+            {
+                gl.IndexPointer(OpenGL.GL_INT, 0, (IntPtr)(&ptr[0]));
+            }
+            
+            fixed (int* ptr = indices)
+            {
+                gl.DrawElements(OpenGL.GL_TRIANGLES, indices.Length, (IntPtr)(&ptr[0]));
+                //gl.DrawElements(OpenGL.GL_QUAD_STRIP, indices.Length, (IntPtr)(&ptr[0]));
+            }
+            fixed (int* ptr = grid)
+            {
+                //gl.IndexPointer(OpenGL.GL_INT, 0, (IntPtr)(&ptr[0]));
+            }
+            fixed (int* ptr = grid)
+            {
+                //gl.DrawElements(OpenGL.GL_LINE_STRIP, TopCircles*CntVertInTopCircles, (IntPtr)(&ptr[TopCircles*CntVertInTopCircles]));
+            }
+        }
+        #endregion
+        else
+        #region Рендинг сцены методом VBO (Vertex Buffer Object) --------------------------------------------
+        {
+            //gl.GenBuffers(indices.Length, indices);
+            //gl.BindBuffer(OpenGL.GL_ELEMENT_ARRAY_BUFFER, OpenGL.GL_INDEX_ARRAY);
+        }
+        #endregion
+    }
+
+}

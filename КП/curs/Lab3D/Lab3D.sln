@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3D", "Lab3D\Lab3D.csproj", "{5F8540FE-9CB5-4382-910C-66C979C522FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGLabPlatform", "..\CGLabPlatform\CGLabPlatform.csproj", "{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F8540FE-9CB5-4382-910C-66C979C522FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8540FE-9CB5-4382-910C-66C979C522FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8540FE-9CB5-4382-910C-66C979C522FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8540FE-9CB5-4382-910C-66C979C522FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E59C7FCE-F143-45A7-8DBE-787E3AE93F4E}
+	EndGlobalSection
+EndGlobal

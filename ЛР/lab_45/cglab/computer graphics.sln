@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGLabPlatform", "CGLabPlatform\CGLabPlatform.csproj", "{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{A67B0ED6-B7C8-49B8-92E1-89B2AACA1113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cglab-demo-ogl", "cglab-demo-ogl\cglab-demo-ogl.csproj", "{3FDB6224-461F-4CB2-805A-013F03163986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE0E2B1-21A6-4FC1-BDDE-2611D3A214D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FDB6224-461F-4CB2-805A-013F03163986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FDB6224-461F-4CB2-805A-013F03163986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FDB6224-461F-4CB2-805A-013F03163986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FDB6224-461F-4CB2-805A-013F03163986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3FDB6224-461F-4CB2-805A-013F03163986} = {A67B0ED6-B7C8-49B8-92E1-89B2AACA1113}
+	EndGlobalSection
+EndGlobal

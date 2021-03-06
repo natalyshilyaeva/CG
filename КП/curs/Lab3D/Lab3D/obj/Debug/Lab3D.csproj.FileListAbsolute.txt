@@ -1,0 +1,60 @@
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\bin\Debug\Lab3D.exe.config
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\bin\Debug\Lab3D.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\bin\Debug\Lab3D.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.Properties.Resources.resources
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.GenerateResource.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CopyComplete
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\obj\Debug\Lab3D.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\3D\Lab3D\Lab3D\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.Properties.Resources.resources
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.GenerateResource.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\bin\Debug\Lab3D.exe.config
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\bin\Debug\Lab3D.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\bin\Debug\Lab3D.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\gl45\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CopyComplete
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\bin\Debug\Lab3D.exe.config
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\bin\Debug\Lab3D.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\bin\Debug\Lab3D.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.Properties.Resources.resources
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.GenerateResource.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CopyComplete
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\bin\Debug\Lab3D.exe.config
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\bin\Debug\Lab3D.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\bin\Debug\Lab3D.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.Properties.Resources.resources
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.GenerateResource.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CopyComplete
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Курсач\curs\Lab3D\Lab3D\obj\Debug\Lab3D.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\bin\Debug\Lab3D.exe.config
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\bin\Debug\Lab3D.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\bin\Debug\Lab3D.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.Properties.Resources.resources
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.GenerateResource.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.csproj.CopyComplete
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\КП\curs\Lab3D\Lab3D\obj\Debug\Lab3D.pdb

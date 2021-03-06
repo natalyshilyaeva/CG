@@ -1,0 +1,167 @@
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\stud\Desktop\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Downloads\cglab_3\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\KG\lab_4-5\cglab_3\cglab_3\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CoreCompileInputs.cache
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\Max\Downloads\cglab\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\max\Desktop\Новая папка\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\lr_4\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+F:\lr_5\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+F:\lr_5\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+F:\lr_5\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+F:\lr_5\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+F:\lr_5\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+F:\lr_5\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+F:\lr_5\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+F:\lr_5\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\KG\lab_4-5\lr_5\lr_5(2)\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\lr_5(2)\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\max\Desktop\vlad\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojResolveAssemblyReference.cache
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\Vlad\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\Hvids\Desktop\vlad_LR45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\Hvids\Desktop\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\KG_LAB_END\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+C:\Users\Anna\Documents\Институт\Инфа\Компьютерная графика\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\Компьютерная_графика_Аня\Лабы\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe.config
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\bin\Debug\cglab45-ogl3d.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.dll
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\bin\Debug\CGLabPlatform.pdb
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csprojAssemblyReference.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CoreCompileInputs.cache
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab-demo-ogl.csproj.CopyComplete
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.exe
+D:\Моя_папка\Наташа\Универ\3_курс\Компьютерная_графика\ЛР\lab_45\cglab\cglab-demo-ogl\obj\Debug\cglab45-ogl3d.pdb

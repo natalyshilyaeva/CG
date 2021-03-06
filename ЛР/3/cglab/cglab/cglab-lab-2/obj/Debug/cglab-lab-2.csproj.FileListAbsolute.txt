@@ -1,0 +1,24 @@
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.exe.config
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.exe
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.pdb
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\bin\Debug\CGLabPlatform.dll
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\bin\Debug\CGLabPlatform.pdb
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\obj\Debug\cglab-lab-2.csprojResolveAssemblyReference.cache
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\obj\Debug\cglab-demo.exe
+C:\Users\stud\Desktop\cglab\cglab\cglab-lab-2\obj\Debug\cglab-demo.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.exe.config
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\obj\Debug\cglab-demo.exe
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\obj\Debug\cglab-demo.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.exe
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\bin\Debug\CGLabPlatform.dll
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\bin\Debug\CGLabPlatform.pdb
+E:\Alexey Skuridin\CG\2\cglab\cglab\cglab-lab-2\obj\Debug\cglab-lab-2.csprojResolveAssemblyReference.cache
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.exe.config
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\obj\Debug\cglab-demo.exe
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\obj\Debug\cglab-demo.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.exe
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\bin\Debug\cglab-demo.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\bin\Debug\CGLabPlatform.dll
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\bin\Debug\CGLabPlatform.pdb
+D:\Alexey Skuridin\CG\3\cglab\cglab\cglab-lab-2\obj\Debug\cglab-lab-2.csprojResolveAssemblyReference.cache
